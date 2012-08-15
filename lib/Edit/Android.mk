@@ -20,6 +20,7 @@ TBLGEN_TABLES := \
   StmtNodes.inc
 
 LOCAL_SRC_FILES := $(clang_edit_SRC_FILES)
+LOCAL_CFLAGS := -fno-strict-aliasing
 
 LOCAL_MODULE:= libclangEdit
 

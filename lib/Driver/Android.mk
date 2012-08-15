@@ -32,6 +32,7 @@ clang_driver_SRC_FILES := \
   WindowsToolChain.cpp
 
 LOCAL_SRC_FILES := $(clang_driver_SRC_FILES)
+LOCAL_CFLAGS := -fno-strict-aliasing
 
 LOCAL_MODULE := libclangDriver
 LOCAL_MODULE_TAGS := optional

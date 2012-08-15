@@ -66,6 +66,7 @@ clang_sema_SRC_FILES :=	\
 	TargetAttributesSema.cpp
 
 LOCAL_SRC_FILES := $(clang_sema_SRC_FILES)
+LOCAL_CFLAGS := -fno-strict-aliasing
 
 LOCAL_MODULE:= libclangSema
 LOCAL_MODULE_TAGS := optional

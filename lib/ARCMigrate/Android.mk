@@ -38,6 +38,7 @@ clang_arc_migrate_SRC_FILES := \
   TransZeroOutPropsInDealloc.cpp
 
 LOCAL_SRC_FILES := $(clang_arc_migrate_SRC_FILES)
+LOCAL_CFLAGS := -fno-strict-aliasing
 
 LOCAL_MODULE := libclangARCMigrate
 LOCAL_MODULE_TAGS := optional
