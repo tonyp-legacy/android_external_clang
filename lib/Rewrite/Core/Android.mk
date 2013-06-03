@@ -28,7 +28,7 @@ clang_rewrite_core_SRC_FILES := \
 
 LOCAL_SRC_FILES := $(clang_rewrite_core_SRC_FILES)
 
-LOCAL_CFLAGS := $(call-cc-cpp-option,-Qunused-arguments)
+LOCAL_CFLAGS := $(call-cc-option,-Qunused-arguments) -fno-strict-aliasing
 
 include $(CLANG_HOST_BUILD_MK)
 include $(CLANG_TBLGEN_RULES_MK)
